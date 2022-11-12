@@ -1,0 +1,29 @@
+.sub-total {
+  width: 80%;
+  background-color: #f5f5dc;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  .div-1 {
+    .text-1 {
+      font-size: 20px;
+    }
+    .text-2 {
+      display: flex;
+      .span-1 {
+        flex: 1;
+      }
+    }
+  }
+  button {
+    padding: 5px;
+    border-radius: 8px;
+    border-color: beige;
+    outline: none;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    text-transform: capitalize;
+  }
+}

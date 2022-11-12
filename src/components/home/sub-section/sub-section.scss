@@ -1,0 +1,145 @@
+.sub-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+  @media only screen and (max-width: 918px) {
+    width: 100%;
+    height: fit-content;
+    margin-top: 40px;
+    padding: 20px;
+  }
+  .vector1 {
+    position: absolute;
+    right: 1px;
+    margin-top: 150px;
+    opacity: 0.1;
+    width: 200px;
+  }
+  .vector2 {
+    width: 170px;
+    position: absolute;
+    right: 10px;
+    margin-top: -120px;
+    opacity: 0.1;
+  }
+  .left-div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      padding: 20px;
+      margin-bottom: 7vh;
+    }
+    img {
+      border-radius: 10px;
+      width: 80%;
+    }
+    .details {
+      position: absolute;
+      width: 336.68px;
+      height: 191px;
+      margin-top: 220px;
+      margin-left: 120px;
+      /* Base/02 */
+      @media only screen and (max-width: 768px) {
+        margin-left: 20px;
+      }
+      @media only screen and (max-width: 918px) {
+        margin-left: 20px;
+        width: 236.68px;
+        height: 181px;
+      }
+      background: #090914;
+      box-shadow: 0px 30px 57px rgba(10, 7, 37, 0.14),
+        0px 4px 4px rgba(0, 0, 0, 0.03);
+      border-radius: 10px;
+      .first-details {
+        color: white;
+        display: flex;
+        .profile-img {
+          width: 40px;
+          padding: 5px;
+          height: 40px;
+        }
+        .text-2 {
+          padding: 5px;
+          padding-left: 20px;
+          .manager-text {
+            color: gray;
+          }
+          p {
+            display: table-footer-group;
+          }
+        }
+      }
+      hr {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      p {
+        color: rgba(255, 252, 252, 0.875);
+        padding-left: 10px;
+      }
+    }
+  }
+  .right-div {
+    width: 50%;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      margin-bottom: 5vh;
+    }
+    @media only screen and (max-width: 918px) {
+      margin-right: 20px;
+    }
+    .text-1 {
+      color: #ff44ec;
+    }
+    .description {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 45px;
+      line-height: 56px;
+      @media only screen and (max-width: 768px) {
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 46px;
+      }
+      /* or 124% */
+
+      /* Base/02 */
+
+      color: #090914;
+    }
+    .features {
+      width: 100%;
+      display: flex;
+      div {
+        width: 230px;
+        padding: 10px;
+        display: flex;
+        margin-bottom: 20px;
+        svg {
+          padding: 4px;
+          margin-top: 15px;
+        }
+        p {
+          flex: 1;
+        }
+      }
+    }
+    button {
+      background-color: #18181b;
+      color: white;
+      padding: 8px;
+      border-radius: 3px;
+    }
+  }
+}

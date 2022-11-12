@@ -1,0 +1,79 @@
+.item {
+  height: fit-content;
+  grid-column: span 1 / span 1;
+  margin: 10px;
+  margin-top: 30px;
+  @media only screen and (max-width: 1024px) {
+  }
+  @media only screen and (max-width: 768px) {
+  }
+  .div-1 {
+    border-radius: 7px;
+    background: #f4f4f4;
+    padding-top: 1px;
+    padding-left: 7px;
+    padding-right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    .text-1 {
+      font-weight: bold;
+      width: fit-content;
+      background-color: #ffff;
+      padding: 1px;
+      font-size: 12px;
+    }
+    .image {
+      width: 80%;
+      height: 141px;
+      margin-left: 29px;
+      border-radius: 10px;
+      @media only screen and (max-width: 768px) {
+        width: 70%;
+        height: 100px;
+      }
+      @media only screen and (max-width: 1027px) {
+        height: 150px;
+      }
+      margin-left: 29px;
+    }
+  }
+  .div-2 {
+    width: 100%;
+    display: flex;
+    height: 7vh;
+    @media only screen and (max-width: 1026px) {
+      height: fit-content;
+    }
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 16px;
+      width: 40%;
+    }
+    @media only screen and (max-width: 1026px) {
+      margin-bottom: 0px;
+    }
+    .item-name {
+      flex: 1;
+      font-size: small;
+    }
+    .item-price {
+      margin-left: 4px;
+      font-size: small;
+    }
+  }
+  .buy-btn {
+    text-transform: capitalize;
+    cursor: pointer;
+    background: #18181b;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    font-size: 11px;
+    &:hover,
+    &:active {
+      background-color: whitesmoke;
+      color: black;
+    }
+  }
+}

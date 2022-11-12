@@ -1,0 +1,18 @@
+.slideshow {
+  .slideshowDots {
+    display: flex;
+    justify-content: center;
+    .slideshowDot {
+      display: inline-block;
+      height: 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+      width: 10px;
+      cursor: pointer;
+      background-color: #c4c4c4;
+    }
+    .slideshowDot.active {
+      background-color: #4337c9;
+    }
+  }
+}

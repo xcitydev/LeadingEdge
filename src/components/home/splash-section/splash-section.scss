@@ -1,0 +1,257 @@
+.splash {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  @media only screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+
+  //    justify-content: space-between;
+
+  .component__one {
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    .wave__component {
+      @media only screen and (max-width: 285px) {
+        width: 100px;
+      }
+      width: 250px;
+      padding: 10px;
+      border-radius: 10px;
+      color: #ffffff;
+      background: linear-gradient(
+        90deg,
+        #44bcff -0.55%,
+        #44b0ff 22.86%,
+        #ff44ec 48.36%,
+        #ff44ec 73.33%,
+        #ff675e 99.34%
+      );
+      .wave {
+        animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+        animation-duration: 2.5s; /* Change to speed up or slow down */
+        animation-iteration-count: infinite; /* Never stop waving :) */
+        transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+        display: inline-block;
+
+        @keyframes wave-animation {
+          0% {
+            transform: rotate(0deg);
+          }
+          10% {
+            transform: rotate(14deg);
+          } /* The following five values can be played with to make the waving more or less extreme */
+          20% {
+            transform: rotate(-8deg);
+          }
+          30% {
+            transform: rotate(14deg);
+          }
+          40% {
+            transform: rotate(-4deg);
+          }
+          50% {
+            transform: rotate(10deg);
+          }
+          60% {
+            transform: rotate(0deg);
+          } /* Reset for the last half to pause */
+          100% {
+            transform: rotate(0deg);
+          }
+        }
+      }
+    }
+    h2 {
+      // line-height: 66px;
+      margin-top: 10px;
+      font-weight: 700;
+    }
+    .btns {
+      display: flex;
+      .button1 {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 20px;
+        display: flex;
+        cursor: pointer;
+        padding: 10px;
+        width: 10vw;
+        border-radius: 10px;
+      }
+      .button2 {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 20px;
+        display: flex;
+        color: black;
+        cursor: pointer;
+        background-color: #44b0ff;
+        padding: 10px;
+        width: 10vw;
+        border-radius: 10px;
+      }
+    }
+    .sponsor {
+      display: flex;
+      margin-top: 50px;
+      p {
+        padding: 30px;
+      }
+      img {
+        width: 100px;
+        height: 30px;
+        padding-top: 43px;
+      }
+    }
+  }
+  .component__two {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin-left: 20px;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+    .coil {
+      width: 150px;
+    }
+    .AA {
+      width: 35vw;
+      border-radius: 10px;
+      margin-left: 74px;
+      margin-top: -67px;
+    }
+    .products {
+      z-index: 1;
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      .product-1 {
+        position: relative;
+        margin-left: 10px;
+        top: 350px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 150px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 193px 193px 109px rgba(0, 0, 0, 0.01),
+          109px 109px 92px rgba(0, 0, 0, 0.05),
+          48px 48px 68px rgba(0, 0, 0, 0.09), 12px 12px 38px rgba(0, 0, 0, 0.1),
+          0px 0px 0px rgba(0, 0, 0, 0.1);
+        .product__subsection {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 5px;
+
+          img {
+            border: solid 1px #d0d5dd;
+            width: 20px;
+            height: 20px;
+            padding: 10px;
+            border-radius: 5px;
+          }
+          .stt {
+            padding: 5px;
+            button {
+              color: #ffffff;
+              border-radius: 5px;
+              cursor: pointer;
+              padding: 5px;
+              @media only screen and (max-width: 768px) {
+                padding: 0px;
+              }
+              // margin: 0 15px 0 15px;
+            }
+          }
+        }
+      }
+      .product-2 {
+        position: relative;
+        margin-left: 10px;
+        top: 520px;
+        left: 280px;
+        display: flex;
+        @media only screen and (max-width: 768px) {
+          width: 120px;
+          top: 300px;
+          left: 30px;
+        }
+        @media only screen and (max-width: 360px) {
+          width: 120px;
+          top: 300px;
+          left: 10px;
+        }
+        @media only screen and (max-width: 920px) {
+          top: 270px;
+          left: 60px;
+        }
+        @media only screen and (max-width: 1024px) {
+          top: 320px;
+          left: 120px;
+        }
+        @media only screen and (max-width: 415px) {
+          top: 290px;
+          left: 40px;
+        }
+        @media only screen and (max-width: 285px) {
+          width: 80px;
+          top: 200px;
+          left: -10px;
+        }
+        @media only screen and (max-width: 915px) {
+          top: 290px;
+          left: 22px;
+        }
+        flex-direction: column;
+        padding: 10px;
+        width: 150px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 193px 193px 109px rgba(0, 0, 0, 0.01),
+          109px 109px 92px rgba(0, 0, 0, 0.05),
+          48px 48px 68px rgba(0, 0, 0, 0.09), 12px 12px 38px rgba(0, 0, 0, 0.1),
+          0px 0px 0px rgba(0, 0, 0, 0.1);
+        .product__subsection {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 5px;
+
+          img {
+            border: solid 1px #d0d5dd;
+            width: 20px;
+            height: 20px;
+            padding: 10px;
+            border-radius: 5px;
+          }
+          .stt {
+            button {
+              background: #18181b;
+              color: #ffffff;
+              padding: 5px;
+              @media only screen and (max-width: 768px) {
+                padding: 0px;
+                font-size: 12px;
+                padding-left: 3px;
+                padding-right: 3px;
+              }
+            }
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 5px;
+            // margin: 0 15px 0 15px;
+          }
+        }
+      }
+    }
+  }
+}
