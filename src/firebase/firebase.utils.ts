@@ -77,6 +77,7 @@ export const createStore = async (userWallet: any, values: any) => {
     selectedCountry,
     createdAt,
   } = values;
+  console.log("done");
 
   if (!userSnapshot.exists()) {
     const verification: boolean = true;
@@ -97,7 +98,6 @@ export const createStore = async (userWallet: any, values: any) => {
         sales,
       });
       return (window.location.pathname = "/dashboard");
-      console.log("done");
     } catch (error: any) {
       console.log("error creating the user", error.message);
     }

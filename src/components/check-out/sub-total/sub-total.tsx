@@ -66,13 +66,13 @@ const SubTotal = ({
     const { name, base58 } = window.tronWeb.defaultAddress;
     console.log("addr", base58);
 
-    mergeArray.forEach(async (item) => {
+    mergeArray.forEach(async (item: any) => {
       //address _to
       var amount = 10000; //amount，in sun
       // Create an unsigned TRX transfer transaction
       const tradeobj = await tronWeb.transactionBuilder.sendTrx(
         item[1],
-        item[0],
+        item[0] * 1000000,
         base58
       );
       // Sign
@@ -85,7 +85,7 @@ const SubTotal = ({
           return output;
         });
     });
-
+    alert("Successfully paid!");
     //END>>>>>>>>>>>>>>>>>>>>>>>>
   };
 

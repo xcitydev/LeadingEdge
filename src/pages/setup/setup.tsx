@@ -128,6 +128,7 @@ const Setup = () => {
 
     //// end
     await createStore(base58, values);
+    console.log("okay");
   };
 
   // image input ref

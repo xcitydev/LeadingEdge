@@ -43,12 +43,20 @@ const LandingPage = (props: Props) => {
               Trade with confidence, Multiple payment gateways, Secure and
               scalable transactions.
             </p>
-            <Link
-              to="/setup"
-              className=" w-fit p-2 text-[13px] rounded-sm lg:bg-black lg:text-white"
-            >
-              Create a Vendor account
-            </Link>
+            <div className="flex justify-between w-2/4">
+              <Link
+                to="/setup"
+                className=" w-fit p-2 text-[13px] rounded-sm lg:bg-black lg:text-white"
+              >
+                Create a Vendor account
+              </Link>
+              <Link
+                to="/stores"
+                className=" w-fit p-2 px-[3rem] text-[13px] rounded-sm lg:bg-black lg:text-white"
+              >
+                Stores
+              </Link>
+            </div>
           </div>
           <div className="hidden lg:flex col-span-2 items-center justify-center">
             <img src={Robot} alt="a pic" className="h-[45vh] mt-5" />
